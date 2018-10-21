@@ -28,17 +28,17 @@ Die nachstehende Dokumentation wurde von Michael Blickenstorfer im Rahmen des Mo
 * [X] Vagrant Ubuntu-Server VM (Version 14.04 LTSB)
 
 #### Inhaltsverzeichnis
-* 01 - [Firewall & Reverse Proxy](XX)
+* 01 - [Firewall & Reverse Proxy](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#-01---firewall--reverse-proxy)
 * 02 - [Benutzer- & Rechteverwaltung](XX)
 * 03 - [SSH](XX)
 * 04 - [Authentifizierung & Autorisierung](XX)
 
 ___
 
-![](https://raw.githubusercontent.com/TacoNaco47/M300_30_Infrastruktur-Automatisierung/master/images/Cloud_Computing_36x36.png "Cloud Computing") 01 - Firewall & Reverse Proxy
+![](https://raw.githubusercontent.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit/master/images/Firewall_36x36.png "Cloud Computing") 01 - Firewall & Reverse Proxy
 ======
 
-> [⇧ **Nach oben**](https://github.com/TacoNaco47/M300_30_Infrastruktur-Automatisierung#m300---infrastruktur-automatisierung-30)
+> [⇧ **Nach oben**](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#m300---infrastruktur-sicherheit-35)
 
 Bis jetzt sind alle Services ungehindert Zugreifbar. Würden wir eine VM direkt in das Internet oder in eine DMZ stellen, hätten wir ein grösseres Sicherheitsproblem. Um das zu verhindern sperren wir nicht-öffentliche Ports mittels einer Firewall und verschlüsseln den restlichen Datenverkehr mit einem Reverse Proxy.
 
@@ -158,8 +158,11 @@ Die Weiterleitungen sind z.B. in `sites-enabled/001-reverseproxy.conf` eingetrag
 ```
 
 
-### Benutzer- & Rechteverwaltung
-***
+
+![](https://raw.githubusercontent.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit/master/images/Benutzer-_und_Rechteverwaltung_36x36.png "Benutzer- & Rechteverwaltung") 02 - Benutzer- & Rechteverwaltung
+======
+
+> [⇧ **Nach oben**](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#m300---infrastruktur-sicherheit-35)
 
 **Benutzer**
 Linux kennt als Multiuser-Betriebssystem - wie alle unixoiden Betriebssysteme - das Konzept verschiedener Benutzer. Diese haben nicht alle unbedingt dieselben Rechte und Privilegien.
@@ -274,8 +277,10 @@ Folgende Befehle dienen zum ändern der Rechte:
 | `chgrp`       | Dient zum Ändern der Gruppe einer Datei              |
 
 
-### SSH
-***
+![](https://raw.githubusercontent.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit/master/images/SSH_36x36.png "SSH") 03 - SSH
+======
+
+> [⇧ **Nach oben**](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#m300---infrastruktur-sicherheit-35)
 
 Es gab einmal eine Zeit, als Computer im Netz über das Telnet-Protokoll zugänglich waren. Da dieses Protokoll keine Verschlüsselung bot, wurde das Mitschneiden von Passwörtern zur trivialen Angelegenheit.
 
@@ -410,10 +415,10 @@ Auf dem iotkit.mc-b.ch ist ausserdem folgender Reverse Proxy Einstellungen beim 
 
 
 
-![](https://raw.githubusercontent.com/TacoNaco47/M300_30_Infrastruktur-Automatisierung/master/images/Cloud_Computing_36x36.png "Authentifizierung & Autorisierung") 04 - Authentifizierung & Autorisierung
+![](https://raw.githubusercontent.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit/master/images/Authentifizierung_und_Autorisierung_36x36.png "Authentifizierung & Autorisierung") 04 - Authentifizierung & Autorisierung
 ======
 
-> [⇧ **Nach oben**](https://github.com/TacoNaco47/M300_30_Infrastruktur-Automatisierung#m300---infrastruktur-automatisierung-30)
+> [⇧ **Nach oben**](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#m300---infrastruktur-sicherheit-35)
 
 **Authentifizierung** <br>
 Authentifizierung ist der Nachweis (Verifizierung) einer behaupteten Eigenschaft einer Entität, die beispielsweise ein Mensch, ein Gerät, ein Dokument oder eine Information sein kann und die dabei durch ihren Beitrag ihre Authentisierung durchführt.
@@ -610,4 +615,4 @@ Der Begriff Identity-Management im Software-Umfeld umfasst keinen genau definier
 
 Eine Identity-Management-Architektur sollte über ein Provisionierungsmodul verfügen, das es erlaubt, den Benutzern automatisch aufgrund ihrer jeweiligen Rolle (und auch Aufgaben) in der Organisation individuelle Berechtigungen zu erteilen. Hier stellt sich aber bereits die Frage, wie weit Identity-Management über die ausschliessliche Verwaltung personenbezogener Daten hinweg Applikations-Funktionalitäten integrieren soll (z.B. ist die "Quota" auf einem Mailserver kein personenbezogenes Datum, sondern eine Applikations-Information).
 
-Identity-Management in einem Unternehmen hat vielfach Schnittstellen zum sogenannten Access-Management, das beispielsweise für Portale die Zugriffsrechte verwaltet, Single Sign-on (SSO) ermöglicht oder Security Policies verwaltet. Für die Kombination von Identity-Management und Access Management wurde in der IT daher mittlerweile der Begriff "Identity and Access Management“ (IAM oder IdAM) geprägt.
+Identity-Management in einem Unternehmen hat vielfach Schnittstellen zum sogenannten Access-Management, das beispielsweise für Portale die Zugriffsrechte verwaltet, Single Sign-on (SSO) ermöglicht oder Security Policies verwaltet. Für die Kombination von Identity-Management und Access Management wurde in der IT daher mittlerweile der Begriff "Identity and Access Management" (IAM oder IdAM) geprägt.
