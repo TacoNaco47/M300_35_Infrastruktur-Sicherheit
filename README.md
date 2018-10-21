@@ -29,9 +29,9 @@ Die nachstehende Dokumentation wurde von Michael Blickenstorfer im Rahmen des Mo
 
 #### Inhaltsverzeichnis
 * 01 - [Firewall & Reverse Proxy](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#-01---firewall--reverse-proxy)
-* 02 - [Benutzer- & Rechteverwaltung](XX)
-* 03 - [SSH](XX)
-* 04 - [Authentifizierung & Autorisierung](XX)
+* 02 - [Benutzer- & Rechteverwaltung](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#-02---benutzer---rechteverwaltung)
+* 03 - [SSH](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#-03---ssh)
+* 04 - [Authentifizierung & Autorisierung](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#-04---authentifizierung--autorisierung)
 
 ___
 
@@ -164,7 +164,7 @@ Die Weiterleitungen sind z.B. in `sites-enabled/001-reverseproxy.conf` eingetrag
 
 > [⇧ **Nach oben**](https://github.com/TacoNaco47/M300_35_Infrastruktur-Sicherheit#m300---infrastruktur-sicherheit-35)
 
-**Benutzer**
+**Benutzer** <br>
 Linux kennt als Multiuser-Betriebssystem - wie alle unixoiden Betriebssysteme - das Konzept verschiedener Benutzer. Diese haben nicht alle unbedingt dieselben Rechte und Privilegien.
 
 Neben den eigentlichen Benutzerkonten für reale Personen existieren auf dem System noch viele Systemdienste mit einem eigenen Benutzerkonto. Dadurch wird erreicht, dass eine mögliche Schwachstelle in einem Dienst nicht zu grosse Auswirkungen auf das System haben kann.
@@ -189,13 +189,13 @@ Beispiele:
 
 **Wichtig:** Wer und wie (z.B. mit/ohne Password) ein Benutzer sudo verwenden kann steht in der Datei `/etc/sudoers` bzw. im Verzeichnis `/etc/sudoers.d`.
 
-**Gruppen**
+**Gruppen** <br>
 Jeder Benutzer ist einer Hauptgruppe zugeordnet, kann daneben aber auch Mitglied weiterer Gruppen sein. Der Zugriff auf gewisse Hardware oder Dienste ist auf die Mitglieder einer bestimmten Gruppe beschränkt. So dürfen z.B. nur Benutzer, die zur Gruppe "audio" gehören, Klänge über die Soundkarte ausgeben. Möchte man nun einem Benutzer die Berechtigung für die Soundkarte geben, so erreicht man dies, indem man ihn in die Gruppe "audio" aufnimmt.
 
 Die Gruppen stehen in der Datei `/etc/group`.
 
 
-### Benutzer- & Rechteverwaltung
+### Homeverzeichnis
 ***
 Das Homeverzeichnis ist der Ort, an dem Benutzer ihre Daten ablegen können und an dem Programme ihre benutzerspezifischen Einstellungen hinterlegen. Nur hier hat der einzelne Benutzer volle Schreib- und Leserechte. Und nur hier sollten Benutzer ihre Daten speichern.
 
