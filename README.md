@@ -19,6 +19,7 @@ Die nachstehende Dokumentation wurde von Michael Blickenstorfer im Rahmen des Mo
 | Datum         | Änderungen                                                                         |  Kürzel  |
 | ------------- |:-----------------------------------------------------------------------------------| :------: |
 | 21.10.2018    | Erstellung der Datei & erste Änderungen eingeführt                                 |    MBL   |
+| 31.10.2018    | Kleine Verbesserungen gemacht                                                      |    MBL   |
 |      ...      | ...                                                                                |    ...   |
 
 #### Voraussetzungen
@@ -270,6 +271,7 @@ Die Bedeutung der Buchstaben sind wie folgt:
     * Das Sticky-Bit hat auf modernen Systemen nur noch eine einzige Funktion: Wird es auf einen Ordner angewandt, so können darin erstellte Dateien oder Verzeichnisse nur vom Dateibesitzer gelöscht oder umbenannt werden. Verwendet wird dies z.B. für /tmp.
 
 Folgende Befehle dienen zum ändern der Rechte:
+
 | Befehl        | Funktion                                             |
 | ------------- | ---------------------------------------------------- | 
 | `chmod`       | Dient zum Setzen der Dateirechte                     |
